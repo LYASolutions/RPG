@@ -1,0 +1,174 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	cout<<"Bem Vindo Ao RPG Medieval Wars"<<endl;
+	
+	int raca, classe;
+	
+	cout<<"\a\nEscolha Uma Raca:\n1 - Humano\n2 - Orc\n3 - Elfo"<<endl;
+	cin>>raca;
+	
+	if(raca==1){
+		cout<<"\nVoce Escolheu Humano"<<endl;
+		/*int saudet=100, saudea, forca=10, destreza=10, inteligencia=10, nivel=0, exp=0;*/
+	}
+	if(raca==2){
+		cout<<"\nVoce Escolheu Orc"<<endl;
+		/*int saudet=150, saudea, forca=15, destreza=10, inteligencia=5, nivel=0, exp=0;*/
+	}
+	if(raca==3){
+		cout<<"\nVoce Escolheu Elfo"<<endl;
+		/*int saudet=50, saudea, forca=5, destreza=15, inteligencia=15, nivel=0, exp=0;*/
+		/*Possui Habilidade Esquiva (destreza= 15)*/
+	}
+	
+	cout<<"\a\nEscolha Uma Classe:\n1 - Mago\n2 - Guerreiro\n3 - Arqueiro"<<endl;
+	cin>>classe;
+	
+	if(classe==1){
+		cout<<"\nVoce Escolheu Mago"<<endl;
+		/*int mpt=10, mpa, magia1, magia2, golpe1;*/
+	}
+	if(classe==2){
+		cout<<"\nVoce Escolheu Guerreiro"<<endl;
+		/*int mpt=0, mpa, espada1, golpe1, golpe2;*/
+	}
+	if(classe==3){
+		cout<<"\nVoce Escolheu Arqueiro"<<endl;
+		/*int mpt=0, mpa, arco1, flechas=30, golpe1, golpe2;*/ 
+	}
+	if((raca==1) && (classe==1)){
+		int saudet=100, saudea, forca=10, destreza=10, inteligencia=10, nivel=0, exp=0; /*raça*/
+		int mpt=10, mpa, magia1, magia2, golpe1; /*classe*/
+		
+		cout<<"\nSeu Personagem e Humano/Mago:\nVida=100\nForca=10\nDestreza=10\nInteligencia=10\nCarisma=10\n\nPossui 2 Magias:\nBola De Fogo\nBola De Gelo\n\nPossui 1 Golpe:\nSoco"<<endl;
+		
+		int opcao, opcao0, ataque;
+		
+		cout<<"\nVoce Acaba De Acordar Rodeado Por Arvores, Em Uma Floresta De Pinheiros Apos Alguns Segundos E Possivel Escutar Uivos E Passos.\nEscolha Uma Opcao:\n\n1 - Adentrar A Mata Rapidamente\n2 - Subir Em Uma Arvore\n3 - Esperar Os Sons Acabarem Para Entrar Na Mata";
+		cin>>opcao;
+		
+		if(opcao==1){
+			cout<<"\n Ao Comecar A Caminhar Entre Os Arbustos Os Sons Comecam A Ficar Com O Volume Mais Alto E A Cada Passo Eles Se Intensificam Cada Vez Mais, Certo Momento Voce Se Encontra Com 3 Lobos:\n\n1 - Fugir\n2 - Lutar"<<endl;
+			cin>>opcao0;
+				if(opcao0==1){
+					cout<<"No Instante Que Voce Ameca Correr Os Lobos O Seguem Insanamente Sedentos Por Sangue O Lobo Maior Consegue Te Alcancar E Consequentemente O Morde Na Perna O Impedindo De Correr: -25 Saude + Impossibilidade De Fuga Por 3 Turnos:\nLobo Grande: Saude = 15\nLobo Filhote: Saude = 5\nLobo Filhote: Saude = 5"<<endl;
+					saudea=saudet-25;
+			
+				}	
+				if(opcao0==2){
+					cout<<"Iniciando O Combate Voce Consegue Identificar Que 1 Lobo E Grande E Os Outros 2 Sao Filhotes O Maior Comeca A Uivar:\n1 - Lobo Grande: Saude = 15\n2 - Lobo Filhote: Saude = 5\n3 - Lobo Filhote: Saude = 5"<<endl;	
+					cin<<ataque;
+					if(ataque==1){
+						cout<<"Voce Escolheu Atacar: Lobo Grande\n1 - Soco\n2 - Bola De Fogo\n3 - Bola De Gelo\n4 - "<<endl;
+						int saudelt=30, saudla;
+					}
+					if(ataque==2){
+						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
+					/*hitkill*/	int  
+					}
+					if(ataque==3){
+						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
+					/*hitkill*/	int 
+					}
+				}
+			}		
+		if(opcao==2){
+			cout<<"\n Ao Subir Na Arvore Voce Percebe Que A Floresta E Gigante Mas Que No Horizonte Existe Uma Cidade, A Direita O Mar, A Esquerda Montanhas E Para Traz Muita Neblina E Neve"<<endl;
+		}
+		if(opcao==3){
+			cout<<"\n Depois De Ficar Horas Esperando O Sons Acabarem A Noite Chega Junto Da Temperatura Baixa Voce Comeca A Sentir Fome E Frio = -25 Saude"<<endl;
+			saudea=saudet-25;
+		}
+	}
+	if((raca==1) && (classe==2)){
+		int saudet=100, saudea, forca=10, destreza=10, inteligencia=10, nivel=0, exp=0; /*raça*/
+		int mpt=0, mpa, espada1, golpe1, golpe2; /*classe*/
+		
+		cout<<"\nSeu Personagem e Humano/Guerreiro:\nVida=100\nForca=10\nDestreza=10\nInteligencia=10\nCarisma=10\n\nPossui 2 Magias:\nBola De Fogo\nBola De Gelo\n\nPossui 1 Golpe:\nSoco"<<endl;
+		
+		int opcao, opcao0, ataque;
+		
+		cout<<"\nVoce Acaba De Acordar Rodeado Por Arvores, Em Uma Floresta De Pinheiros Apos Alguns Segundos E Possivel Escutar Uivos E Passos.\nEscolha Uma Opcao:\n\n1 - Adentrar A Mata Rapidamente\n2 - Subir Em Uma Arvore\n3 - Esperar Os Sons Acabarem Para Entrar Na Mata";
+		cin>>opcao;
+		
+		if(opcao==1){
+			cout<<"\n Ao Comecar A Caminhar Entre Os Arbustos Os Sons Comecam A Ficar Com O Volume Mais Alto E A Cada Passo Eles Se Intensificam Cada Vez Mais, Certo Momento Voce Se Encontra Com 3 Lobos:\n\n1 - Fugir\n2 - Lutar"<<endl;
+			cin>>opcao0;
+				if(opcao0==1){
+					cout<<"No Instante Que Voce Ameca Correr Os Lobos O Seguem Insanamente Sedentos Por Sangue O Lobo Maior Consegue Te Alcancar E Consequentemente O Morde Na Perna O Impedindo De Correr: -25 Saude + Impossibilidade De Fuga Por 3 Turnos:\nLobo Grande: Saude = 15\nLobo Filhote: Saude = 5\nLobo Filhote: Saude = 5"<<endl;
+					saudea=saudet-25;
+				}	
+					if(opcao0==2){
+						cout<<"Iniciando O Combate Voce Consegue Identificar Que 1 Lobo E Grande E Os Outros 2 Sao Filhotes O Maior Comeca A Uivar:\n1 - Lobo Grande: Saude = 15\n2 - Lobo Filhote: Saude = 5\n3 - Lobo Filhote: Saude = 5"<<endl;	
+						cin<<ataque;
+						if(ataque==1){
+							cout<<"Voce Escolheu Atacar: Lobo Grande\n1 - Soco\n2 - Bola De Fogo\n3 - Bola De Gelo\n4 - "<<endl;
+							int saudelt=30, saudla;
+						}
+						if(ataque==2){
+						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
+						/*hitkill*/	int  
+						}
+						if(ataque==3){
+						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
+						/*hitkill*/	int 
+						}
+					}
+		}		
+		if(opcao==2){
+			cout<<"\n Ao Subir Na Arvore Voce Percebe Que A Floresta E Gigante Mas Que No Horizonte Existe Uma Cidade, A Direita O Mar, A Esquerda Montanhas E Para Traz Muita Neblina E Neve"<<endl;
+		}
+		if(opcao==3){
+			cout<<"\n Depois De Ficar Horas Esperando O Sons Acabarem A Noite Chega Junto Da Temperatura Baixa Voce Comeca A Sentir Fome E Frio = -25 Saude"<<endl;
+			saudea=saudet-25;
+		}
+	}
+	if((raca==1) && (classe==2)){
+		int saudet=100, saudea, forca=10, destreza=10, inteligencia=10, nivel=0, exp=0; /*raça*/
+		int mpt=0, mpa, espada1, golpe1, golpe2; /*classe*/
+	
+		cout<<"\nSeu Personagem e Humano/Guerreiro:\nVida=100\nForca=10\nDestreza=10\nInteligencia=10\nCarisma=10\n\nPossui 2 Magias:\nBola De Fogo\nBola De Gelo\n\nPossui 1 Golpe:\nSoco"<<endl;
+		
+		int opcao, opcao0, ataque;
+		
+		cout<<"\nVoce Acaba De Acordar Rodeado Por Arvores, Em Uma Floresta De Pinheiros Apos Alguns Segundos E Possivel Escutar Uivos E Passos.\nEscolha Uma Opcao:\n\n1 - Adentrar A Mata Rapidamente\n2 - Subir Em Uma Arvore\n3 - Esperar Os Sons Acabarem Para Entrar Na Mata";
+		cin>>opcao;
+		
+		if(opcao==1){
+			cout<<"\n Ao Comecar A Caminhar Entre Os Arbustos Os Sons Comecam A Ficar Com O Volume Mais Alto E A Cada Passo Eles Se Intensificam Cada Vez Mais, Certo Momento Voce Se Encontra Com 3 Lobos:\n\n1 - Fugir\n2 - Lutar"<<endl;
+			cin>>opcao0;
+				if(opcao0==1){
+					cout<<"No Instante Que Voce Ameca Correr Os Lobos O Seguem Insanamente Sedentos Por Sangue O Lobo Maior Consegue Te Alcancar E Consequentemente O Morde Na Perna O Impedindo De Correr: -25 Saude + Impossibilidade De Fuga Por 3 Turnos:\nLobo Grande: Saude = 15\nLobo Filhote: Saude = 5\nLobo Filhote: Saude = 5"<<endl;
+					saudea=saudet-25;
+				}		
+					if(opcao0==2){
+						cout<<"Iniciando O Combate Voce Consegue Identificar Que 1 Lobo E Grande E Os Outros 2 Sao Filhotes O Maior Comeca A Uivar:\n1 - Lobo Grande: Saude = 15\n2 - Lobo Filhote: Saude = 5\n3 - Lobo Filhote: Saude = 5"<<endl;	
+						cin<<ataque;
+						if(ataque==1){
+						cout<<"Voce Escolheu Atacar: Lobo Grande\n1 - Soco\n2 - Bola De Fogo\n3 - Bola De Gelo\n4 - "<<endl;
+						int saudelt=30, saudla;
+						}
+						if(ataque==2){
+						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
+						/*hitkill*/	int  
+						}
+						if(ataque==3){
+						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
+						/*hitkill*/	int 
+						}
+					}
+		}		
+	if(opcao==2){
+		cout<<"\n Ao Subir Na Arvore Voce Percebe Que A Floresta E Gigante Mas Que No Horizonte Existe Uma Cidade, A Direita O Mar, A Esquerda Montanhas E Para Traz Muita Neblina E Neve"<<endl;
+	}
+	if(opcao==3){
+		cout<<"\n Depois De Ficar Horas Esperando O Sons Acabarem A Noite Chega Junto Da Temperatura Baixa Voce Comeca A Sentir Fome E Frio = -25 Saude"<<endl;
+		saudea=saudet-25;
+	}
+	}
+	
+	return 0;
+}
