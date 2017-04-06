@@ -106,7 +106,7 @@ int main() {
 						cin<<ataque;
 						if(ataque==1){
 							cout<<"Voce Escolheu Atacar: Lobo Grande\n1 - Soco\n2 - Bola De Fogo\n3 - Bola De Gelo\n4 - "<<endl;
-							int saudelt=30, saudla;
+							int saudelt=30, saudea;
 						}
 						if(ataque==2){
 						cout<<"Voce Escolheu Atacar: Lobo Pequeno"<<endl;
